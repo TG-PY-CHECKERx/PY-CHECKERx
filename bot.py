@@ -269,11 +269,9 @@ def send_results(chat_id, user_id, results, loading_msg_id=None):
     bad_count = total - fresh_count
     
     # Ultra-Minimal Professional Formatting
-    output_text = "**System Report**\n"
-    output_text += "━━━━━━━━━━━━━━━━━━━━\n"
     output_text += f"Total: {total}  |  Fresh: {fresh_count}  |  Bad: {bad_count}\n"
     if view_mode == "fresh": output_text += "*(Filter: Fresh Only)*\n"
-    output_text += "\n"
+
     
     prev_was_fresh = None
     displayed_count = 0
@@ -301,7 +299,7 @@ def send_results(chat_id, user_id, results, loading_msg_id=None):
     if displayed_count == 0:
         output_text += "*(No numbers match the current filter)*\n"
         
-    output_text += "\n━━━━━━━━━━━━━━━━━━━━\n"
+    
     pts = get_points(user_id)
     pts_text = "Unlimited" if pts == float('inf') else f"{pts}"
     output_text += f"Balance: {pts_text}"
