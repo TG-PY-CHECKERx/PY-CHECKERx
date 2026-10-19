@@ -10,7 +10,7 @@ from datetime import date
 from flask import Flask
 
 # --- CONFIGURATION ---
-BOT_TOKEN = "8931620940:AAGLNeVDMe4ghZyAubDgEiDj9v4wSLr5atM"
+BOT_TOKEN = "8931620940:AAEW6TWVb5DsTANWfNaq5Z_ZvwdoEdzWJYQ"
 ADMIN_ID = 7266067201
 ADMIN_USERNAME = "@syedmahinislam"
 
